@@ -1,0 +1,502 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brandon Watkins</title>
+        <meta name="Brandon Watkins" content="Online Resume">
+        <meta name="Brandon Watkins" content="SitePoint">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Prata:400,400italic,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+            // When the user clicks on the logo button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+                  // Store hash
+                  var hash = this.hash;
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+
+        </script>
+
+        <script>
+            function initMap() {
+                var loc = {lat: 52.205338, lng: 0.121817};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: loc
+            });
+
+               var marker = new google.maps.Marker({
+                    position: loc,
+                    map: map
+               });
+            }
+
+      </script>
+
+       <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASLg1Nx-2dxvVfpfeFvUJuYFraju5msGY&callback=initMap">
+       </script>
+
+    </head>
+
+    <body>
+        <section id="section04" class="demo">
+            <header class="bgimg-1">
+
+                <nav>
+                    <div class="logoDiv">
+                        <img id="logo" src="images/logoTemp.png" alt="logo" onclick="topFunction()" class="hvr-forward">
+                    </div>
+
+                    <div class="socialMedia-header">
+                        <a href="https://github.com/brandonwatkins" target="_blank">
+                            <img id="githubIcon" src="images/github.png" alt="GitHub">
+                        </a>
+
+                        <a href="https://www.instagram.com/_brandonwatkins/" target="_blank">
+                            <img id="instagramIcon" src="images/instagram.png" alt="Instagram">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/brandon-watkins-b21a0b136/" target="_blank">
+                            <img id="linkedInIcon" src="images/linkedin.png" alt="linkedIn">
+                        </a>
+
+                        <a href="https://www.facebook.com/brandon.watkins.5?ref=br_rs" target="_blank">
+                            <img id="facebookIcon" src="images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+
+                </nav>
+
+                <div class="headerLockup">
+                    <h1 id="landingPage-title">I'm Brandon.</h1>
+
+                    <p class="kicker">Developer // Traveller // Athlete</p>
+
+                    <div class="downloadDiv">
+                        <a href="downloads/Brandon_Watkins_Graduate_Resume.docx" download class="hvr-shrink">
+                        <img src="images/downloadButton1.png" alt="downloadButton">
+                        </a>
+                    </div>
+                </div>
+
+                <a id="scrollBtn" href="#about"><span></span></a>
+
+            </header>
+
+        </section>
+
+        <section id="about" class="aboutMe-section">
+
+            <div class="section-heading">
+                <img id="A-heading" src="images/A-heading.png" alt="A">
+
+                <h2 id="aboutMe-heading">A Little About Me</h2>
+            </div>
+
+            <div id="icon-section">
+                <div class="icon-lockup">
+                    <div class="icon-picture">
+                    <img src="images/Athlete-icon.png" alt="Athlete">
+                    </div>
+
+                    <h4>ATHLETE</h4>
+                    <p class="icon-text">I have been an NCAA athlete for four years and in this time played basketball for Mars Hill University. This university is in North Carolina, USA and competes in the Southern Atlantic Conference.</p>
+                </div>
+
+                <div class="icon-lockup">
+                    <div class="icon-picture">
+                    <img src="images/Student-icon.png" alt="Student">
+                    </div>
+
+                    <h4>ACHIEVEMENTS</h4>
+                    <p class="icon-text">Graduated with honours from Mars Hill University in May 2018, with a Bachelor of Science in Computer Science. I also received a Medal of Honour for graduating with highest GPA in my major for the class of 2018. Later was awarded part 1 & 2 of the “Grow with Google Scholarship”</p>
+                </div>
+
+                <div class="icon-lockup">
+                    <div class="icon-picture">
+                        <img src="images/Developer-icon.png" alt="Developer">
+                    </div>
+
+                    <h4>SOFTWARE DEVELOPER</h4>
+                    <p class="icon-text">I have professional experience with Mobile and Server Development. Working in a “start-up” environment, has allowed me to gain in-depth server side, and client side knowledge. Currently increasing my knowledge in all of fields outside of work with online courses.</p>
+                </div>
+
+                <div class="icon-lockup">
+                    <div class="icon-picture">
+                        <img src="images/Traveler-icon.png" alt="Traveler">
+                    </div>
+
+                    <h4>TRAVELER</h4>
+                    <p class="icon-text">Exploring this world is something that I am very passionate about. I was born in Zimbabwe and grew up in New Zealand, then continued my education in the US. After graduating, have been living in England, and have been ticking off many countries in Europe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div id="skills" class="bgimg-2">
+            <div class="portfolio-lockUp">
+                <div class="left-div">
+                    <div class="myWork-lockup">
+                        <h4 id="development-heading">DEVELOPMENT</h4>
+
+                        <p class="development-text"><strong>The apps to the right are examples of Android and iOS applications I have created.</strong> Select an app to view the source code and watch the demo video on the GitHub repository. I have also gained professional server-side experience creating REST endpoints from the REST layer, all the way through to the Database layer. Mobile and Server development in a professional environment has given me a well rounded set of skills. Outside of work I have been learning iOS and Advanced Android Development.</p>
+
+
+                        <div class="container">
+                          <div class="skills html">HTML/CSS & JavaScript</div>
+                        </div>
+
+                        <div class="container">
+                          <div class="skills swift">Databases: Neo4j, ElasticSearch</div>
+                        </div>
+
+                        <div class="container">
+                          <div class="skills java">Java/Kotlin</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="middle-div">
+                    <a href="https://github.com/brandonwatkins/DearDiary" target="_blank"><img class="hvr-shrink" src="images/Pixel-app.png" alt="Pixel"></a>
+                </div>
+
+                <div class="right-div">
+                    <a href="https://github.com/brandonwatkins/retroCalculator" target="_blank"><img class="hvr-shrink" id="iPhone"src="images/iPhone-app.png" alt="iPhone"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section id="recommendations" class="recommendations-section">
+
+            <div class="section-heading">
+                <img id="R-heading" src="images/R-heading.png" alt="R">
+
+                <h2 id="recommendations-heading">Letters Of Recommendation</h2>
+            </div>
+
+            <h4 id="recommendations-kicker">Select someone below to view their contact details</h4>
+
+            <div class="photo-container">
+                <div class="photo-div">
+                    <img id="Gilbert" src="images/Gilbert-photo.png" class="hvr-shrink" alt="Gilbert">
+                </div>
+
+                <div class="photo-div">
+                    <img id="Howard"src="images/Howard-photo.png" class="hvr-shrink" alt="Howard">
+                </div>
+
+                <div class="photo-div">
+                    <img id="Finora"src="images/Finora-photo.png" class="hvr-shrink" alt="Finora">
+                </div>
+                <!--
+                <div class="photo-div">
+                    <img id="Kirk"src="images/Kirk-photo.png" alt="Kirk">
+                </div>
+                -->
+            </div>
+
+
+            <!-- The Modal -->
+            <div id="gilbertModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="gilClose">&times;</span>
+                  <h2>Marty Gilbert.</h2>
+                </div>
+                <div class="modal-body">
+                    <p>DEPARTMENT: Computer Science</p>
+                    <p>OFFICE:  Ferguson Math & Science 141</p>
+                    <p>PHONE:  <a href="tel:+1-828-689-1195">(+1) 828-689-1195</a></p>
+                    <p>EMAIL:  <a href="mailto:mgilbert@mhu.edu?" target="_top">mgilbert@mhu.edu</a></p>
+                </div>
+                <div class="modal-footer">
+                  <h3>Assistant Professor of Computer Science - Mars Hill University</h3>
+                  <p>B.S., Mars Hill College, 1999</p>
+                  <p>M.S., Duke University, 2002</p>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- The Modal -->
+            <div id="howardModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="howClose">&times;</span>
+                  <h2>Stefen Howard.</h2>
+                </div>
+                <div class="modal-body">
+                    <p>DEPARTMENT: Computer Science</p>
+                    <p>OFFICE:  Ferguson Math & Science 143</p>
+                    <p>PHONE:  <a href="tel:+1-828-689-1323">(+1) 828-689-1323</a></p>
+                    <p>EMAIL:  <a href="mailto:showard@mhu.edu?" target="_top">showard@mhu.edu</a></p>
+
+                </div>
+                <div class="modal-footer">
+                  <h3>Associate Professor of Computer Science & Program - Mars Hill University</h3>
+                  <p>B.A., Guilford College, 1989</p>
+                  <p>M.S., University of Tennessee at Knoxville, 1998; Clemson University, 2002-05</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- The Modal -->
+            <div id="finoraModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="finClose">&times;</span>
+                  <h2>Victor Finora.</h2>
+                </div>
+                <div class="modal-body">
+                    <p>TITLE:	Head Coach</p>
+                    <p>PHONE:	<a href="tel:+1-828-689-1370">(+1) 828-689-1370</a></p>
+                    <p>EMAIL:  <a href="mailto:vfinora@mhu.edu?" target="_top">vfinora@mhu.edu</a></p>
+                </div>
+                <div class="modal-footer">
+                  <h3>Head Coach, Mens Basketball - Mars Hill University</h3>
+                  <p>B.A.,  William Penn University</p>
+                  <p>M.S., University of Kentucky</p>
+                </div>
+              </div>
+
+            </div>
+
+        </section>
+
+        <section class="education-section">
+            <div id="icon-section2">
+
+                <div class="icon-lockup2">
+                    <div id="icon-picture2">
+                        <img src="images/graduate-icon.png" alt="Graduate">
+                    </div>
+                </div>
+
+                <div class="icon-lockup3">
+                        <h4 id="education">GRADUATE MAY 2018</h4>
+                        <p class="icon-text">While at university I have acquired the technical knowledge and skills in the computer science field. I have used a range of languages, operating systems and development tools in my time at university. Specialising in software development, I am eager to develop as a graduate trainee in this area</p>
+                </div>
+
+                <div class="icon-lockup2">
+                    <div id="icon-picture2">
+                        <img src="images/report-card-icon.png" alt="ReportCard">
+                    </div>
+                </div>
+
+                <div class="icon-lockup2">
+                    <h4 id="education">GRADES & CLASSES</h4>
+                    <p class="icon-text">I am projected to graduate with a GPA of 3.7 out of 4. I have also had 5 apperances on the deans list while attending Mars Hill University. Classes included object oriented programming, mobile applications, web development, computer theory and system administration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Parallax Image with Contact Text -->
+        <div class="bgimg-3">
+          <div id="contact" class="contact-section">
+
+              <div class="section-heading">
+                  <img id="C-heading" src="images/C-heading.png" alt="C">
+
+                  <h2 id="contactMe-heading">Get into contact with me</h2>
+              </div>
+
+               <h4 id="contact-kicker">I am currently working as a Software Developer for RedBite Solutions Ltd. on the Science Park in Cambridge, UK</h4>
+
+
+
+
+               <div id="icon-section">
+                   <div class="contact-icon-lockup">
+                       <div class="contact-icon-picture">
+                           <a class="contact-text" href="tel:44-7492-649-360"><img src="images/phone-contact-icon.png" class="hvr-shrink" alt="Phone"></a>
+                       </div>
+
+                       <h4><a class="contact-text" href="tel:44-7492-649-360">+44 7492 649 360</a></h4>
+                   </div>
+
+                   <div class="contact-icon-lockup">
+                        <div class="contact-icon-picture">
+                           <a href="mailto:info@brandon-watkins.com?" target="_top"><img src="images/email-contact-icon.png" class="hvr-shrink" alt="Email"></a>
+                        </div>
+
+                       <h4><a class="contact-text" href="mailto:info@brandon-watkins.com?" target="_top">info@brandon-watkins.com</a></h4>
+                   </div>
+
+                   <div class="contact-icon-lockup">
+                       <div class="contact-icon-picture">
+                           <a href="https://www.linkedin.com/in/brandon-watkins-b21a0b136/" target="_blank"><img src="images/linkedIn-contact-icon.png" class="hvr-shrink" alt="linkedIn"></a>
+                       </div>
+
+                       <h4><a class="contact-text" href="https://www.linkedin.com/in/brandon-watkins-b21a0b136/" target="_blank">brandonwatkins</a></h4>
+
+                   </div>
+               </div>
+            </div>
+
+
+        </div>
+
+        <div class="map-container">
+            <div id="map-lockup"></div>
+    	    <div id="map"></div>
+        </div>
+
+        <footer>
+            <div class="footerImg">
+                <img id="footerLogo" src="images/BWlogo.png" alt="logo">
+            </div>
+
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/brandon.watkins.5?ref=br_rs" target="_blank">
+                    <img class="icons" src="images/facebook-black.png" alt="facebook">
+                </a>
+
+                <a href="https://www.linkedin.com/in/brandon-watkins-b21a0b136/" target="_blank">
+                    <img class="icons" src="images/linkedin-black.png" alt="linkedin">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img class="icons" src="images/instagram-black.png" alt="instagram">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img class="icons" src="images/github-black.png" alt="github">
+                </a>
+            </div>
+            <p class="createdBy">Created by Brandon Watkins 2017</p>
+        </footer>
+
+        <script>
+            // Get the GILBERT modal
+            var gilModal = document.getElementById('gilbertModal');
+
+            // Get the button that opens the modal
+            var gilbertLetter = document.getElementById("Gilbert");
+
+            // Get the <span> element that closes the modal
+            var gilSpan = document.getElementsByClassName("gilClose")[0];
+
+            // When the user clicks the button, open the modal
+            gilbertLetter.onclick = function() {
+                gilModal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            gilSpan.onclick = function() {
+                gilModal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == gilModal) {
+                    gilModal.style.display = "none";
+                }
+            }
+
+            /**************************************************************/
+
+            // Get the HOWARD modal
+            var howModal = document.getElementById('howardModal');
+
+            // Get the button that opens the modal
+            var howardLetter = document.getElementById("Howard");
+
+            // Get the <span> element that closes the modal
+            var howSpan = document.getElementsByClassName("howClose")[0];
+
+            // When the user clicks the button, open the modal
+            howardLetter.onclick = function() {
+                howModal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            howSpan.onclick = function() {
+                howModal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == howModal) {
+                    howModal.style.display = "none";
+                }
+            }
+
+            /**************************************************************/
+
+            // Get the FINORA modal
+            var finModal = document.getElementById('finoraModal');
+
+            // Get the button that opens the modal
+            var finoraLetter = document.getElementById("Finora");
+
+            // Get the <span> element that closes the modal
+            var finSpan = document.getElementsByClassName("finClose")[0];
+
+            // When the user clicks the button, open the modal
+            finoraLetter.onclick = function() {
+                finModal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            finSpan.onclick = function() {
+                finModal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == finModal) {
+                    finModal.style.display = "none";
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
